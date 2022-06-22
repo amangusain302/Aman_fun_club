@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Login</title>
+</head>
+
+<body>
+    <section class="area-login">
+        <h1 class="main_heading">
+            Welcome in Aman Fun club!
+        </h1>
+        <div class="login">
+            <div>
+                <img src="https://img.icons8.com/doodle/344/homer-simpson.png" />
+                <h1 class="main_text" id="main_text">hey! Are you stupid ?</h1>
+                <div class="button_container" id="button_container">
+                    <button id="yes" class="yes response">YES</button>
+                    <button id="button" class="button response">NO</button>
+                </div>
+            </div>
+    </section>
+
+
+    <script>
+        var b = document.getElementById("button");
+        b.addEventListener("click", change);
+
+        function change() {
+            var i = Math.floor(Math.random() * 55) + 10;
+            var j = Math.floor(Math.random() * 70) + 1;
+            var k = Math.floor(Math.random() * 70) + 1;
+            var l = Math.floor(Math.random() * 70) + 1;
+            b.style.left = i + "px";
+            b.style.top = j + "px";
+            b.style.right = k + "px";
+            b.style.bottom = l + "px";
+        }
+
+        var buttons = document.getElementById('button_container');
+        var mainText = document.getElementById('main_text');
+        yes.addEventListener("click", newchange);
+
+        function newchange() {
+            document.getElementById('main_text').innerHTML = "I knew, you are !!<br> 🤣🤣";
+            mainText.style.fontSize = "25px";
+            mainText.style.textAlign = "center";
+
+            buttons.style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
